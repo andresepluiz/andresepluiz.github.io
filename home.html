@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>HOME</title>
+</head>
+<body>
+        <img src="img/mais (1).png" id="menuButton" class="btn-add" alt="btn-add">
+        <div id="menuBox" class="hidden">
+            <h2>O QUE DESEJA?</h2>
+        <div class="escolhe-pratos">
+            <div class="hotdog-icon" id="hotdog">
+            <img src="img/hamburguer-hotdog.png" id="hotdog-button" class="img-hotdog">
+            <h2>HOT-DOGS</h2>
+        </div>
+        <div class="batata-icon" id="batata">
+            <img src="img/batatas-fritas.png" id="batata-button" class="img-batata">
+            <h2>BATATA</h2>
+        </div>
+        <div class="refrigerantes-icon" id="bebidas">
+            <img src="img/refrigerantes.png" id="refrigerante-button" class="img-refrigerantes">
+            <h2>BEBIDAS</h2>
+        </div>
+            <div>
+                
+            </div>
+        </div>
+            <button id="closeMenu">Fechar</button>
+        </div>
+        <div id="menuBox-hotdog" class="hidden">
+            <h2>O QUE DESEJA?</h2>
+            <ul>
+                <li data-product="HOTDOG1">HOTDOG1</li>
+                <li data-product="HOTDOG2">HOTDOG2</li>
+                <li data-product="HOTDOG3">HOTDOG3</li>
+                <li data-product="HOTDOG4">HOTDOG4</li>
+                <li data-product="HOTDOG5">HOTDOG5</li>
+            </ul>
+            <div id="quantity-selector" style="display: none;">
+                <button id="decrement">-</button>
+                <input type="text" id="quantity" value="1" readonly>
+                <button id="increment">+</button>
+              </div>
+            <button id="volta-menu">Voltar</button>
+            <button id="adiciona-pedido">Adicionar</button>
+        </div>
+    <script src="script.js"></script>
+    <script src="product-select.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+body{
+    background: #3d3432;
+
+
+}
+
+
+.hidden {
+    display: none;
+}
+
+#menuBox {
+    background-color: rgb(114, 55, 27);
+    color: aliceblue;
+    border: 1px solid #352b2b;
+    padding: 20px;
+    width: 70vw;
+    position: absolute;
+    top: 105px;
+    left: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    animation: fall-list 0.5s ease-out forwards;
+    font-family: sans-serif;
+}
+
+#menuButton {
+    padding: 10px 20px;
+    background-color: #FCBA0E;
+    color: rgba(26, 24, 24, 0.993);
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 4vw;
+    height: 6vh;
+    margin-top: 3vh;
+    background-color: #FCBA0E;
+    border-radius: 2vh;
+    
+    
+}
+
+#closeMenu {
+    padding: 10px 20px;
+    background-color: #FCBA0E;
+    color: rgba(26, 24, 24, 0.993);
+    border: none;
+    margin-top: -2vh;
+    margin-left: 60vw;
+    width: 7vw;
+    height: 6vh;
+    background-color: #FCBA0E;
+    border-radius: 2vh;
+    font-weight: 800;
+
+}
+
+#menuButton:hover, #closeMenu:hover, #volta-menu, #adiciona-pedido {
+    cursor: pointer;
+    color: #3e333169;
+    transform: scale(1.1);
+}
+
+.img-hotdog {
+    width: 10vw;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    margin-top: 8vh;
+    margin-left: 1vw;
+    margin-bottom: 2vh;
+}
+
+.img-batata {
+    width: 10vw;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    margin-top: 8vh;
+    margin-left: -1vw;
+    margin-bottom: 2vh;
+}
+
+.img-refrigerantes {
+    width: 10vw;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    margin-top: 8vh;
+    margin-left: -1vw;
+    margin-bottom: 2vh;
+}
+
+.escolhe-pratos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+}
+
+.hotdog-icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.batata-icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.refrigerantes-icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#menuBox-hotdog {
+    background-color: rgb(114, 55, 27);
+    color: aliceblue;
+    border: 1px solid #352b2b;
+    padding: 20px;
+    width: 70vw;
+    position: absolute;
+    top: 105px;
+    left: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    animation: fall-list 0.5s ease-out forwards;
+    font-family: sans-serif;
+}
+
+#volta-menu {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #FCBA0E;
+    color: rgba(26, 24, 24, 0.993);
+    border: none;
+    margin-top: -4vh;
+    margin-left: 60vw;
+    width: 7vw;
+    height: 6vh;
+    background-color: #FCBA0E;
+    border-radius: 2vh;
+    font-weight: 800;
+}
+
+#adiciona-pedido {
+    padding: 10px 20px;
+    background-color: #FCBA0E;
+    color: rgba(26, 24, 24, 0.993);
+    border: none;
+    margin-top: 25vh;
+    margin-left: 60vw;
+    width: 10vw;
+    height: 6vh;
+    background-color: #FCBA0E;
+    border-radius: 2vh;
+    font-weight: 800;
+}
+
+#menuBox-hotdog li{
+    list-style-type: none;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+#menuBox-hotdog li:hover {
+    cursor: pointer;
+    color: #FCBA0E;
+}
+
+#quantity-selector {
+    margin-top: -100px;
+    margin-left: -40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #quantity-selector button {
+    width: 30px;
+    height: 30px;
+    background-color: #FCBA0E;
+    border-radius: 1vh;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #quantity-selector input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+  }
+
+
+
+
+
+
+
+
+@keyframes fall-list {
+    0% {
+        height: 5vh; /* Começa fora da tela */
+         /* Começa invisível */
+    }
+    100% {
+        height: 50vh; /* Alvo da animação, pode ser ajustado conforme necessário */
+        opacity: 1; /* Fica visível no final */
+         /* Ajusta para centralizar verticalmente */
+    }
+}
+
+@keyframes up-list {
+    0% {
+        height: 30vh; /* Começa fora da tela */
+         /* Começa invisível */
+    }
+    100% {
+        height: 5vh; /* Alvo da animação, pode ser ajustado conforme necessário */
+        opacity: 1; /* Fica visível no final */
+         /* Ajusta para centralizar verticalmente */
+    }
+}
